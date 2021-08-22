@@ -27,7 +27,7 @@ CREATE TABLE `reasons_to_work_in_playtika` (
   `insert_time` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `reason` varchar(2048) CHARACTER SET utf8 DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,6 +36,7 @@ CREATE TABLE `reasons_to_work_in_playtika` (
 
 LOCK TABLES `reasons_to_work_in_playtika` WRITE;
 /*!40000 ALTER TABLE `reasons_to_work_in_playtika` DISABLE KEYS */;
+INSERT INTO `reasons_to_work_in_playtika` VALUES (1,'2021-08-22 21:29:54','reason_1'),(2,'2021-08-22 21:29:59','reason_2'),(3,'2021-08-22 21:30:01','reason_3'),(4,'2021-08-22 21:30:03','reason_4'),(5,'2021-08-22 21:30:06','reason_5');
 /*!40000 ALTER TABLE `reasons_to_work_in_playtika` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-08-23  0:26:43
+-- Dump completed on 2021-08-23  0:30:25
