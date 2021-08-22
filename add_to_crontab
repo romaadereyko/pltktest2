@@ -1,0 +1,5 @@
+#/bin/bash
+
+echo "* 4 * * * /bin/bash /path/to/script/ALL_JPEG.sh
+
+exit 0
